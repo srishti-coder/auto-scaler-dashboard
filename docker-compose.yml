@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  node-api:
+    build: ./node-api
+    container_name: node-api
+    ports:
+      - "3000:3000"
+    networks:
+      - monitor-net
+
+  stress-simulator:
+    build: ./stress-simulator
+    container_name: stress-sim
+    networks:
+      - monitor-net
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitor-net
+
+  autoscaler:
+    build: ./autoscaler
+    container_name: autoscaler
+    depends_on:
+      - prometheus
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - monitor-net
+
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - monitor-net
+
+networks:
+  monitor-net:
+    driver: bridge
+
