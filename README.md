@@ -32,11 +32,11 @@ Node API metrics: [http://localhost:3000/metrics](http://localhost:3000/metrics)
 
 ### 📸 Metrics Output Screenshot
 
-![Metrics JSON Output](SS1.png)<img width="1358" height="218" alt="SS1" src="https://github.com/user-attachments/assets/9b50a3c6-f1e2-4b41-8215-4872cb0edbda" />
+![Metrics JSON Output]<img width="1358" height="218" alt="SS1" src="https://github.com/user-attachments/assets/9b50a3c6-f1e2-4b41-8215-4872cb0edbda" />
 
 
 ### 📸 Prometheus Target Screenshot
 
-![Prometheus Scraping Screenshot](ss2.png)<img width="687" height="403" alt="ss2" src="https://github.com/user-attachments/assets/52f1f853-0093-4819-9c72-5a70ac7362ac" />
+![Prometheus Scraping Screenshot]<img width="687" height="403" alt="ss2" src="https://github.com/user-attachments/assets/52f1f853-0093-4819-9c72-5a70ac7362ac" />
 
 
