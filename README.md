@@ -1,19 +1,18 @@
-# Auto Scaler Dashboard (Basic Metrics Export)
+# ⚙️ Auto Scaler Dashboard (Basic Metrics Export)
 
-This project sets up a basic monitoring dashboard using **Prometheus**, **Node.js**, and **Docker Compose**.
+This project sets up a minimal monitoring setup using **Node.js**, **Prometheus**, **Node Exporter**, and **Docker Compose**.  
+It is designed to expose basic CPU/Memory metrics which can be scraped and visualized via Prometheus.
 
-The system includes:
-- A `node-api` server exposing a `/metrics` endpoint
-- Prometheus scraping metrics from the `node-api`
-- Node Exporter for host-level metrics
+---
 
-## 🔧 Stack
+## 📦 Tech Stack
 
-- Node.js
-- Express.js
+- Node.js + Express.js
 - Prometheus
-- Docker + Docker Compose
+- Node Exporter
+- Docker & Docker Compose
 
+---
 ## 📦 Setup Instructions
 
 ```bash
