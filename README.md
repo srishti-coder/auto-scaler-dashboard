@@ -32,8 +32,8 @@ Node API metrics: [http://localhost:3000/metrics](http://localhost:3000/metrics)
 
 ### 📸 Metrics Output Screenshot
 
-![Metrics JSON Output](SS1.<img width="1358" height="218" alt="SS1" src="https://github.com/user-attachments/assets/9b50a3c6-f1e2-4b41-8215-4872cb0edbda" />
-png)
+![Metrics JSON Output](SS1.png)<img width="1358" height="218" alt="SS1" src="https://github.com/user-attachments/assets/9b50a3c6-f1e2-4b41-8215-4872cb0edbda" />
+
 
 ### 📸 Prometheus Target Screenshot
 
